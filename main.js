@@ -120,7 +120,7 @@ function checkIban(iban) {
 
   const countryCode = iban.substring(0, 2); // First two characters for country code
   const checksum = iban.substring(2, 4);
-  const samaCode = iban.substring(4, 6); // SAMA code starts after SA** (position 4–5)
+  const samaCode = iban.substring(4, 6); // SAMA code starts after SA**  (position 4–5)
 
   if (countryCode !== "SA") {
     return {
